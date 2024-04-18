@@ -25,7 +25,7 @@ public class Voiture extends Vehicule implements Roulant {
     }
 
     @Override
-    public boolean peutRouler() {
+    public boolean roule() {
         return true;
     }
 }

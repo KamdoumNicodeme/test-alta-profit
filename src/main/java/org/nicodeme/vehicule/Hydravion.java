@@ -26,12 +26,12 @@ public class Hydravion extends Vehicule implements Volant, Navigant {
     }
 
     @Override
-    public boolean peutNaviguer() {
+    public boolean navigue() {
         return true;
     }
 
     @Override
-    public boolean peutVoler() {
+    public boolean vole() {
         return true;
     }
 }

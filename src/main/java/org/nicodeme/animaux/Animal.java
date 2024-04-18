@@ -2,7 +2,7 @@ package org.nicodeme.animaux;
 
 public abstract class Animal {
 
-    private Long id;
+    private final Long id;
 
     public Long getId() {
         return id;

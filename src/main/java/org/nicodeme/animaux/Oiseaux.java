@@ -8,7 +8,7 @@ public class Oiseaux extends Animal implements Volant {
     }
 
     @Override
-    public boolean peutVoler() {
+    public boolean vole() {
         return true;
     }
 

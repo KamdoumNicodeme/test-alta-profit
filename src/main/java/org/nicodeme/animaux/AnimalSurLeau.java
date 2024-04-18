@@ -8,7 +8,7 @@ public class AnimalSurLeau extends Animal implements Navigant {
     }
 
     @Override
-    public boolean peutNaviguer() {
+    public boolean navigue() {
         return true;
     }
 

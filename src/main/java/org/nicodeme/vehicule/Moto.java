@@ -25,7 +25,7 @@ public class Moto extends Vehicule implements Roulant {
     }
 
     @Override
-    public boolean peutRouler() {
+    public boolean roule() {
         return true;
     }
 }

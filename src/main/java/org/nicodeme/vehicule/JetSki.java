@@ -25,7 +25,7 @@ public class JetSki extends Vehicule implements Navigant {
     }
 
     @Override
-    public boolean peutNaviguer() {
+    public boolean navigue() {
         return false;
     }
 }

@@ -26,7 +26,7 @@ public class Avion extends Vehicule implements Volant {
     }
 
     @Override
-    public boolean peutVoler() {
+    public boolean vole() {
         return true;
     }
 }
