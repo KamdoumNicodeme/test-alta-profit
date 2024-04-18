@@ -10,9 +10,9 @@ Nombre de véhicules dans le garage:2
 
 ****************************************************************
 LISTE DES VEHICULES DANS LE HANGAR
+Vehicule de type Moto
 Vehicule de type Helicoptere
+Vehicule de type Avion
 Vehicule de type Bateau
 Vehicule de type Voiture
-Vehicule de type Moto
-Vehicule de type Avion
 Vehicule de type JetSki

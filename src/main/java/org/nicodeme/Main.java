@@ -11,7 +11,7 @@ import java.io.FileNotFoundException;
 public class Main {
     public static void main(String[] args) throws FileNotFoundException {
 
-        Hanga2 hangar = new Hanga2();
+        Hangar hangar = new Hangar();
         hangar.entre(VehiculeFactory.createVehicule(VehiculeType.AVION));
         hangar.entre(VehiculeFactory.createVehicule(VehiculeType.BATEAU));
         hangar.entre(VehiculeFactory.createVehicule(VehiculeType.VOITURE));
