@@ -11,9 +11,22 @@ Nombre de véhicules dans le garage:2
 ****************************************************************
 LISTE DES VEHICULES DANS LE HANGAR
 Vehicule de type Moto
-Vehicule de type Voiture
 Vehicule de type Bateau
-Vehicule de type JetSki
+Vehicule de type Hydravion
 Vehicule de type Avion
 Vehicule de type Helicoptere
-Vehicule de type Hydravion
+Vehicule de type Voiture
+Vehicule de type JetSki
+**********************************************************
+*******************Recensement*****************************
+
+Moto peut rouler.
+Bateau peut naviguer.
+Hydravion peut voler.
+Hydravion peut naviguer.
+Avion peut voler.
+Helicoptere peut voler.
+Voiture peut rouler.
+JetSki peut naviguer.
+animal sur l'eau peut nager.
+Oiseaux peut voler.

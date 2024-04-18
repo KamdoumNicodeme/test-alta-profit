@@ -1,7 +1,6 @@
 package org.nicodeme.environnement;
 
-import org.nicodeme.contracts.IOutpuManager;
-import org.nicodeme.contracts.SectionStrategy;
+import org.nicodeme.contracts.*;
 import org.nicodeme.vehicule.Vehicule;
 import org.nicodeme.sections.AeroportSection;
 import org.nicodeme.sections.GarageSection;
@@ -52,6 +51,21 @@ public class Hangar {
         outputManager.print("****************************************************************");
         outputManager.print("LISTE DES VEHICULES DANS LE HANGAR");
         vehicules.forEach(outputManager::imprimer);
+    }
+
+
+    public void recenserCapacites(IOutpuManager outputManager) {
+        for (Vehicule vehicule : vehicules) {
+            if (vehicule instanceof Volant) {
+                outputManager.print(vehicule.getType() + " peut voler.");
+            }
+            if (vehicule instanceof Roulant) {
+                outputManager.print(vehicule.getType() + " peut rouler.");
+            }
+            if (vehicule instanceof Navigant) {
+                outputManager.print(vehicule.getType() + " peut naviguer.");
+            }
+        }
     }
 
 

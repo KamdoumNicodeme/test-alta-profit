@@ -1,7 +1,9 @@
 package org.nicodeme.vehicule;
 
 
-public class JetSki extends Vehicule {
+import org.nicodeme.contracts.Navigant;
+
+public class JetSki extends Vehicule implements Navigant {
 
     public JetSki(Long id) {
         super(id);
@@ -20,5 +22,10 @@ public class JetSki extends Vehicule {
     @Override
     public String seDeplacer() {
         return "Navigue";
+    }
+
+    @Override
+    public boolean peutNaviguer() {
+        return false;
     }
 }

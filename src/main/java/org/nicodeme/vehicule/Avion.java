@@ -1,7 +1,9 @@
 package org.nicodeme.vehicule;
 
 
-public class Avion extends Vehicule {
+import org.nicodeme.contracts.Volant;
+
+public class Avion extends Vehicule implements Volant {
 
 
     public Avion(Long id) {
@@ -21,5 +23,10 @@ public class Avion extends Vehicule {
     @Override
     public String seDeplacer() {
         return "Vole";
+    }
+
+    @Override
+    public boolean peutVoler() {
+        return true;
     }
 }

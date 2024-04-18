@@ -1,7 +1,9 @@
 package org.nicodeme.vehicule;
 
 
-public class Moto extends Vehicule {
+import org.nicodeme.contracts.Roulant;
+
+public class Moto extends Vehicule implements Roulant {
 
     public Moto(Long id) {
         super(id);
@@ -20,5 +22,10 @@ public class Moto extends Vehicule {
     @Override
     public String seDeplacer() {
         return "Roule";
+    }
+
+    @Override
+    public boolean peutRouler() {
+        return true;
     }
 }
