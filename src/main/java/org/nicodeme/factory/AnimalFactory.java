@@ -12,8 +12,6 @@ public class AnimalFactory {
         Animal animal = switch (type){
             case OISEAUX -> new Oiseaux(nextId);
             case ANIMAL_SUR_LEAU-> new AnimalSurLeau(nextId);
-
-
         };
         nextId++;
         return animal;

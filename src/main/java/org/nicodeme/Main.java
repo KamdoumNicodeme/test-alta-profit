@@ -43,6 +43,8 @@ public class Main {
         ferme.ajouterAnimal(AnimalFactory.createAnimal(AnimalType.ANIMAL_SUR_LEAU));
         Environnement environnement = new Environnement(hangar,ferme);
         environnement.recenserToutesCapacites(fileOutput);
+        environnement.recenserToutesCapacites(consoleOutput);
+
 
 
 

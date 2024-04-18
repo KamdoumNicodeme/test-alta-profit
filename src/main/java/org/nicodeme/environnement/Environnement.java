@@ -3,8 +3,8 @@ package org.nicodeme.environnement;
 import org.nicodeme.contracts.IOutpuManager;
 
 public class Environnement {
-    private Hangar hangar;
-    private Ferme ferme;
+    private final Hangar hangar;
+    private final Ferme ferme;
 
     public Environnement(Hangar hangar, Ferme ferme) {
         this.hangar = hangar;
