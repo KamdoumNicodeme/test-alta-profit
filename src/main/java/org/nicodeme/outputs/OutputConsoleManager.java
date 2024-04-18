@@ -1,7 +1,7 @@
 package org.nicodeme.outputs;
 
 import org.nicodeme.contracts.IOutpuManager;
-import org.nicodeme.contracts.Vehicule;
+import org.nicodeme.vehicule.Vehicule;
 
 public class OutputConsoleManager implements IOutpuManager {
     @Override

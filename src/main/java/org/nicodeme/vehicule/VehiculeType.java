@@ -1,4 +1,4 @@
-package org.nicodeme;
+package org.nicodeme.vehicule;
 
 public enum VehiculeType {
 
@@ -7,7 +7,8 @@ public enum VehiculeType {
     BATEAU("Bateau"),
     JETSKI("JetSki"),
     MOTO("Moto"),
-    VOITURE("Voiture");
+    VOITURE("Voiture"),
+    HYDRAVION("Hydravion");
 
     private final String typeValue;
 

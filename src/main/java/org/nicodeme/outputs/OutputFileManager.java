@@ -1,7 +1,7 @@
 package org.nicodeme.outputs;
 
 import org.nicodeme.contracts.IOutpuManager;
-import org.nicodeme.contracts.Vehicule;
+import org.nicodeme.vehicule.Vehicule;
 
 import java.io.File;
 import java.io.FileNotFoundException;

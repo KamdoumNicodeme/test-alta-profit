@@ -1,10 +1,12 @@
-package org.nicodeme;
-
-import org.nicodeme.contracts.Vehicule;
+package org.nicodeme.vehicule;
 
 
 public class Helicoptere extends Vehicule {
 
+
+    public Helicoptere(Long id) {
+        super(id);
+    }
 
     @Override
     public String getDetails() {
@@ -14,5 +16,10 @@ public class Helicoptere extends Vehicule {
     @Override
     public String getType() {
         return VehiculeType.HELICOPTERE.getTypeValue();
+    }
+
+    @Override
+    public String seDeplacer() {
+        return "Vole";
     }
 }

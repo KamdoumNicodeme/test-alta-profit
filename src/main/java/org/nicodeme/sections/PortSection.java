@@ -1,10 +1,8 @@
 package org.nicodeme.sections;
 
 
-import org.nicodeme.Helicoptere;
-import org.nicodeme.Voiture;
+import org.nicodeme.vehicule.*;
 import org.nicodeme.contracts.SectionStrategy;
-import org.nicodeme.contracts.Vehicule;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -15,8 +13,9 @@ public class PortSection implements SectionStrategy {
 
     public PortSection() {
         typesAdmissibles = new HashSet<>();
-        typesAdmissibles.add(Voiture.class);
-        typesAdmissibles.add(Helicoptere.class);
+        typesAdmissibles.add(Bateau.class);
+        typesAdmissibles.add(JetSki.class);
+        typesAdmissibles.add(Hydravion.class);
     }
     @Override
     public long compterVehicules(HashSet<Vehicule> vehicules) {

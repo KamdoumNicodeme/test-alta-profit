@@ -1,8 +1,8 @@
-package org.nicodeme;
+package org.nicodeme.environnement;
 
 import org.nicodeme.contracts.IOutpuManager;
 import org.nicodeme.contracts.SectionStrategy;
-import org.nicodeme.contracts.Vehicule;
+import org.nicodeme.vehicule.Vehicule;
 import org.nicodeme.sections.AeroportSection;
 import org.nicodeme.sections.GarageSection;
 import org.nicodeme.sections.PortSection;

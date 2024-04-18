@@ -1,9 +1,9 @@
 package org.nicodeme.sections;
 
-import org.nicodeme.Helicoptere;
-import org.nicodeme.Voiture;
+import org.nicodeme.vehicule.Helicoptere;
+import org.nicodeme.vehicule.Voiture;
 import org.nicodeme.contracts.SectionStrategy;
-import org.nicodeme.contracts.Vehicule;
+import org.nicodeme.vehicule.Vehicule;
 
 import java.util.HashSet;
 import java.util.Set;

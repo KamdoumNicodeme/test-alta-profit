@@ -1,19 +1,22 @@
 package org.nicodeme.factory;
 
-import org.nicodeme.*;
-import org.nicodeme.contracts.Vehicule;
+import org.nicodeme.vehicule.Vehicule;
+import org.nicodeme.vehicule.*;
 
 public class VehiculeFactory {
+    private static long nextId = 1;
+
     public static Vehicule createVehicule(VehiculeType type) {
-        return switch (type) {
-            case AVION -> new Avion();
-            case BATEAU -> new Bateau();
-            case MOTO -> new Moto();
-            case HELICOPTERE -> new Helicoptere();
-            case JETSKI -> new JetSki();
-            case VOITURE -> new Voiture();
-
+        Vehicule vehicule = switch (type) {
+            case AVION -> new Avion(nextId);
+            case BATEAU -> new Bateau(nextId);
+            case MOTO -> new Moto(nextId);
+            case HELICOPTERE -> new Helicoptere(nextId);
+            case JETSKI -> new JetSki(nextId);
+            case VOITURE -> new Voiture(nextId);
+            case HYDRAVION -> new Hydravion(nextId);
         };
+        nextId++;
+        return vehicule;
     }
-
 }

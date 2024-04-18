@@ -1,9 +1,11 @@
 package org.nicodeme;
 
 import org.nicodeme.contracts.IOutpuManager;
+import org.nicodeme.environnement.Hangar;
 import org.nicodeme.factory.VehiculeFactory;
 import org.nicodeme.outputs.OutputConsoleManager;
 import org.nicodeme.outputs.OutputFileManager;
+import org.nicodeme.vehicule.VehiculeType;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -18,6 +20,7 @@ public class Main {
         hangar.entre(VehiculeFactory.createVehicule(VehiculeType.MOTO));
         hangar.entre(VehiculeFactory.createVehicule(VehiculeType.HELICOPTERE));
         hangar.entre(VehiculeFactory.createVehicule(VehiculeType.JETSKI));
+        hangar.entre(VehiculeFactory.createVehicule(VehiculeType.HYDRAVION));
 
 
         IOutpuManager consoleOutput = new OutputConsoleManager();
