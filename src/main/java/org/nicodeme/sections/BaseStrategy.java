@@ -14,5 +14,5 @@ public abstract class BaseStrategy implements SectionStrategy {
             .count();
     }
 
-    public abstract Set<Class<? extends Vehicule>> getVehicules();
+    protected abstract Set<Class<? extends Vehicule>> getVehicules();
 }

@@ -6,7 +6,7 @@ public abstract class Vehicule {
         this.id = id;
     }
 
-    private Long id;
+    private final Long id;
 
     public Long getId() {
         return id;

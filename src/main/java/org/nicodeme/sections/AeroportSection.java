@@ -7,8 +7,6 @@ import org.nicodeme.vehicule.Vehicule;
 import java.util.Set;
 
 public class AeroportSection extends BaseStrategy {
-
-
     @Override
     public Set<Class<? extends Vehicule>> getVehicules() {
         return Set.of(Avion.class, Helicoptere.class);

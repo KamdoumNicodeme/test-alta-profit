@@ -9,23 +9,26 @@ import org.nicodeme.factory.AnimalFactory;
 import org.nicodeme.factory.VehiculeFactory;
 import org.nicodeme.outputs.OutputConsoleManager;
 import org.nicodeme.outputs.OutputFileManager;
+import org.nicodeme.vehicule.Vehicule;
 import org.nicodeme.vehicule.VehiculeType;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.util.Set;
 
 public class Main {
     public static void main(String[] args) throws FileNotFoundException {
 
         Hangar hangar = new Hangar();
-        hangar.entre(VehiculeFactory.createVehicule(VehiculeType.AVION));
-        hangar.entre(VehiculeFactory.createVehicule(VehiculeType.BATEAU));
-        hangar.entre(VehiculeFactory.createVehicule(VehiculeType.VOITURE));
-        hangar.entre(VehiculeFactory.createVehicule(VehiculeType.MOTO));
-        hangar.entre(VehiculeFactory.createVehicule(VehiculeType.HELICOPTERE));
-        hangar.entre(VehiculeFactory.createVehicule(VehiculeType.JETSKI));
-        hangar.entre(VehiculeFactory.createVehicule(VehiculeType.HYDRAVION));
+        Set<VehiculeType> vehiculeTypes = Set.of(VehiculeType.AVION,
+            VehiculeType.BATEAU,
+            VehiculeType.VOITURE,
+            VehiculeType.MOTO,
+            VehiculeType.HELICOPTERE,
+            VehiculeType.JETSKI,
+            VehiculeType.HYDRAVION);
 
+        vehiculeTypes.forEach(vehiculeType -> hangar.entre(VehiculeFactory.createVehicule(vehiculeType)));
 
         IOutpuManager consoleOutput = new OutputConsoleManager();
         hangar.imprimerStats(consoleOutput);
@@ -39,8 +42,9 @@ public class Main {
         hangar.imprimerTout(fileOutput);
 
         Ferme ferme = new Ferme();
-        ferme.ajouterAnimal(AnimalFactory.createAnimal(AnimalType.OISEAUX));
-        ferme.ajouterAnimal(AnimalFactory.createAnimal(AnimalType.ANIMAL_SUR_LEAU));
+        Set<AnimalType> animalTypes = Set.of(AnimalType.OISEAUX,
+            AnimalType.ANIMAL_SUR_LEAU);
+        animalTypes.forEach(animalType -> ferme.ajouterAnimal(AnimalFactory.createAnimal(animalType)));
         Environnement environnement = new Environnement(hangar,ferme);
         environnement.recenserToutesCapacites(fileOutput);
         environnement.recenserToutesCapacites(consoleOutput);

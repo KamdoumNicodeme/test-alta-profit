@@ -4,7 +4,7 @@ public enum AnimalType {
 
 
     OISEAUX("Oiseaux"),
-    ANIMAL_SUR_LEAU("animal sur l'eau");
+    ANIMAL_SUR_LEAU("Animal sur l'eau");
 
     private final String typeValue;
 

@@ -47,29 +47,17 @@ public class Hangar {
         output.print("Nombre de véhicules dans le port: " + nombreDeVehiculesPort());
         output.print("Nombre de véhicules dans le garage:" + nombreDeVehiculesGarage() + " \n");
     }
+
     public void imprimerTout(IOutpuManager outputManager) {
         outputManager.print("****************************************************************");
         outputManager.print("LISTE DES VEHICULES DANS LE HANGAR");
         vehicules.forEach(outputManager::imprimer);
     }
 
-
     public void recenserCapacites(IOutpuManager outputManager) {
         for (Vehicule vehicule : vehicules) {
-            if (vehicule instanceof Volant) {
-                outputManager.print(vehicule.getType() + " peut voler.");
-            }
-            if (vehicule instanceof Roulant) {
-                outputManager.print(vehicule.getType() + " peut rouler.");
-            }
-            if (vehicule instanceof Navigant) {
-                outputManager.print(vehicule.getType() + " peut naviguer.");
-            }
+            outputManager.print(vehicule.getType() + " " + vehicule.seDeplacer());
         }
     }
-
-
-
-
 
 }

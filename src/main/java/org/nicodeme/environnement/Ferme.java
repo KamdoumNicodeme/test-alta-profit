@@ -18,13 +18,8 @@ public class Ferme {
 
     public void recenserCapacites(IOutpuManager outputManager) {
         for (Animal animal : animals) {
-            if (animal instanceof Volant) {
-                outputManager.print(animal.getType() + " peut voler.");
-            }
 
-            if (animal instanceof Navigant) {
-                outputManager.print(animal.getType() + " peut nager.");
-            }
+            outputManager.print(animal.getType() + " " + animal.seDeplacer());
         }
     }
 }

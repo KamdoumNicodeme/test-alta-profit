@@ -16,4 +16,9 @@ public class Oiseaux extends Animal implements Volant {
     public String getType() {
         return AnimalType.OISEAUX.getTypeValue();
     }
+
+    @Override
+    public String seDeplacer() {
+        return "Vole";
+    }
 }

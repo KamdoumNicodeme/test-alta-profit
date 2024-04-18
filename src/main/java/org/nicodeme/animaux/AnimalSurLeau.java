@@ -16,4 +16,9 @@ public class AnimalSurLeau extends Animal implements Navigant {
     public String getType() {
         return AnimalType.ANIMAL_SUR_LEAU.getTypeValue();
     }
+
+    @Override
+    public String seDeplacer() {
+        return "Nage";
+    }
 }
